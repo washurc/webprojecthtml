@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Good Send | FAQ</title>
+        <link rel="stylesheet" href="css/mystyle.css">
+
+        <script>
+            function change_content(){
+                document.getElementById("change").innerHTML = "We currently operate nationwide, with international shipping and global digital file transfer capabilities. Contact us to confirm service availability in your area.";
+            }
+        </script>
+        <script src="javas/myjava.js"></script>
+    </head>
+    <body>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+        <a class="milano" href="faq.html">FAQ</a>
+        <h1 class="main-heading" >FAQ</h1>
+
+        <button onclick="document.getElementById('change').innerHTML = 'Good-Send is a modern delivery and digital transfer service founded in 2022. We specialize in fast, secure, and seamless solutions for both physical shipments and digital file transfers.'">WhatIsGood-Send?</button>
+
+        <button onclick="change_content()">What areas do you serve?</button>
+
+        <button onclick="dynamic()">How do I contact customer support?</button>
+
+        <p id="change"></p>
+
+        <input name="model" type="number" id="model" placeholder="model" />
+        <input name="weeks" type="number" id="weeks" placeholder="weeks" />
+
+        <button onclick="calculateBMI()">TransportationSelection</button>
+        <p id="results">Transportation Confirmed Confirmed</p>
+        <ol>
+            
+
+<li>How can I track my delivery?
+Once your package or file is sent, you’ll receive a unique tracking link via email or SMS. You can also track it directly from your Good-Send dashboard.</li>
+<li>Do you offer same-day delivery?
+Yes, we offer same-day delivery in select areas. Availability depends on location and time of request.</li>
+<li>Can I schedule a pickup?
+Absolutely. You can schedule pickups directly through our website or mobile app, choosing a time that works best for you.</li>
+<li>What happens if my delivery is delayed or lost?
+While rare, delays or issues can happen. Please contact our support team immediately, and we’ll investigate and resolve the issue promptly.</li>
+
+<li>How do I get started?
+Simply sign up on our website, choose your service, and start sending with confidence.</li>
+        </ol>
+    </body>
+</html>
