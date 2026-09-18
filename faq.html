@@ -1,51 +1,120 @@
+```html
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Good Send | FAQ</title>
-        <link rel="stylesheet" href="css/mystyle.css">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <script>
-            function change_content(){
-                document.getElementById("change").innerHTML = "We currently operate nationwide, with international shipping and global digital file transfer capabilities. Contact us to confirm service availability in your area.";
-            }
-        </script>
-        <script src="javas/myjava.js"></script>
-    </head>
-    <body>
+    <title>Good-Send | FAQ</title>
+
+    <link rel="stylesheet" href="css/mystyle.css">
+
+    <!-- JavaScript for FAQ interactions -->
+    <script>
+        function change_content() {
+            document.getElementById("change").innerHTML =
+                "We currently operate nationwide, with international shipping and global digital file transfer capabilities. Contact us to confirm service availability in your area.";
+        }
+    </script>
+
+    <script src="javas/myjava.js"></script>
+</head>
+
+<body>
+
+    <!-- Main navigation -->
+    <nav class="navbar">
         <a href="index.html">Home</a>
         <a href="about.html">About Us</a>
         <a href="services.html">Services</a>
         <a href="contact.html">Contact</a>
-        <a class="milano" href="faq.html">FAQ</a>
-        <h1 class="main-heading" >FAQ</h1>
+        <a class="active" href="faq.html">FAQ</a>
+    </nav>
 
-        <button onclick="document.getElementById('change').innerHTML = 'Good-Send is a modern delivery and digital transfer service founded in 2022. We specialize in fast, secure, and seamless solutions for both physical shipments and digital file transfers.'">WhatIsGood-Send?</button>
+    <!-- FAQ heading -->
+    <main class="faq-container">
 
-        <button onclick="change_content()">What areas do you serve?</button>
+        <h1 class="main-heading">Frequently Asked Questions</h1>
 
-        <button onclick="dynamic()">How do I contact customer support?</button>
+        <p class="faq-intro">
+            Find answers to some of the most common questions about
+            Good-Send's delivery and digital transfer services.
+        </p>
 
-        <p id="change"></p>
+        <!-- Interactive FAQ questions -->
+        <section class="faq-interactive">
 
-        <input name="model" type="number" id="model" placeholder="model" />
-        <input name="weeks" type="number" id="weeks" placeholder="weeks" />
+            <h2>Quick Questions</h2>
 
-        <button onclick="calculateBMI()">TransportationSelection</button>
-        <p id="results">Transportation Confirmed Confirmed</p>
-        <ol>
-            
+            <button onclick="document.getElementById('change').innerHTML =
+                'Good-Send is a modern delivery and digital transfer service founded in 2022. We specialize in fast, secure, and seamless solutions for both physical shipments and digital file transfers.'">
+                What is Good-Send?
+            </button>
 
-<li>How can I track my delivery?
-Once your package or file is sent, you’ll receive a unique tracking link via email or SMS. You can also track it directly from your Good-Send dashboard.</li>
-<li>Do you offer same-day delivery?
-Yes, we offer same-day delivery in select areas. Availability depends on location and time of request.</li>
-<li>Can I schedule a pickup?
-Absolutely. You can schedule pickups directly through our website or mobile app, choosing a time that works best for you.</li>
-<li>What happens if my delivery is delayed or lost?
-While rare, delays or issues can happen. Please contact our support team immediately, and we’ll investigate and resolve the issue promptly.</li>
+            <button onclick="change_content()">
+                What areas do you serve?
+            </button>
 
-<li>How do I get started?
-Simply sign up on our website, choose your service, and start sending with confidence.</li>
-        </ol>
-    </body>
+            <button onclick="dynamic()">
+                How do I contact customer support?
+            </button>
+
+            <p id="change" class="faq-answer"></p>
+
+        </section>
+
+        <!-- Frequently asked questions -->
+        <section class="faq-list">
+
+            <h2>More Frequently Asked Questions</h2>
+
+            <article class="faq-item">
+                <h3>How can I track my delivery?</h3>
+                <p>
+                    Once your package or file is sent, you'll receive a unique
+                    tracking link via email or SMS. You can also track it
+                    directly from your Good-Send dashboard.
+                </p>
+            </article>
+
+            <article class="faq-item">
+                <h3>Do you offer same-day delivery?</h3>
+                <p>
+                    Yes, we offer same-day delivery in select areas.
+                    Availability depends on location and time of request.
+                </p>
+            </article>
+
+            <article class="faq-item">
+                <h3>Can I schedule a pickup?</h3>
+                <p>
+                    Absolutely. You can schedule pickups directly through
+                    our website or mobile app, choosing a time that works
+                    best for you.
+                </p>
+            </article>
+
+            <article class="faq-item">
+                <h3>What happens if my delivery is delayed or lost?</h3>
+                <p>
+                    While rare, delays or issues can happen. Please contact
+                    our support team immediately, and we'll investigate and
+                    resolve the issue promptly.
+                </p>
+            </article>
+
+            <article class="faq-item">
+                <h3>How do I get started?</h3>
+                <p>
+                    Simply sign up on our website, choose your service,
+                    and start sending with confidence.
+                </p>
+            </article>
+
+        </section>
+
+    </main>
+
+</body>
 </html>
+```
